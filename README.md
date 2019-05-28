@@ -1,7 +1,7 @@
 # Maximum_Flow
 
 Introduction
-It is JAVAFx application which aids in creating graphs and finds maximum flow of them. Everything is visualized from the original graph creation, showing the max flow graph, augmented paths, and residual graphs. Ford Fulkerson Edmond Karp Algorithm is used to find the maximum flow.
+It is JavaFx application which aids in creating graphs and finds maximum flow of them. Everything is visualized from the original graph creation, showing the max flow graph, augmented paths, and residual graphs. Ford Fulkerson Edmond Karp Algorithm is used to find the maximum flow.
 
 Steps
 1. Create graph either using auto generation or manually.
