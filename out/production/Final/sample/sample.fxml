@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="649.0" prefWidth="1331.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <VBox layoutY="87.0" prefHeight="498.0" prefWidth="440.0">
+         <children>
+            <Pane fx:id="graphpane" prefHeight="425.0" prefWidth="440.0">
+               <children>
+                  <Text fill="#2e5e90" layoutX="150.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Network Flow">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+         </children>
+      </VBox>
+      <Pane layoutX="-4.0" layoutY="-2.0" prefHeight="89.0" prefWidth="1344.0" style="-fx-background-color: #005b96;" />
+      <Button fx:id="graphgenerate" layoutX="1160.0" layoutY="125.0" mnemonicParsing="false" onAction="#generate" prefHeight="51.0" prefWidth="140.0" style="-fx-background-color: #005b96; -fx-text-fill: white; -fx-background-radius: 5,4,3,5; -fx-background-insets: 0,1,2,0; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 ); -fx-font-family: Arial; -fx-text-fill: linear-gradient(white, #d0d0d0) linear-gradient(white, #d0d0d0); -fx-padding: 10 20 10 20;" text="Generate Graph" />
+      <VBox layoutX="618.0" layoutY="137.0" prefHeight="498.0" prefWidth="440.0">
+         <children>
+            <Pane fx:id="flowgraph" prefHeight="425.0" prefWidth="440.0">
+               <children>
+                  <Text fill="#2e5e90" layoutX="150.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximum Flow">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <Button fx:id="calMx" layoutX="1160.0" layoutY="201.0" mnemonicParsing="false" onAction="#calculateMaxFlow" prefHeight="51.0" prefWidth="140.0" style="-fx-background-color: #005b96; -fx-text-fill: white; -fx-background-radius: 5,4,3,5; -fx-background-insets: 0,1,2,0; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 ); -fx-font-family: Arial; -fx-text-fill: linear-gradient(white, #d0d0d0) linear-gradient(white, #d0d0d0); -fx-padding: 10 20 10 20;" text="Maximum Flow" />
+   </children>
+</AnchorPane>

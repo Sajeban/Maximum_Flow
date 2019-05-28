@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.embed.swing.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootpane" prefHeight="514.0" prefWidth="1313.0" stylesheets="@../resources/dark-theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Revival.ManualController">
+   <children>
+      <Pane fx:id="pane" layoutX="14.0" layoutY="14.0" minHeight="500.0" minWidth="500.0" prefHeight="500.0" prefWidth="500.0">
+         <children>
+            <SwingNode fx:id="nodeswing" layoutX="14.0" layoutY="14.0" />
+         </children>
+      </Pane>
+      <ImageView fx:id="refresh" fitHeight="55.0" fitWidth="69.0" layoutX="1244.0" layoutY="14.0" onMouseClicked="#refresh" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@refresh.png" />
+         </image>
+      </ImageView>
+      <JFXTabPane layoutX="903.0" layoutY="76.0" prefHeight="366.0" prefWidth="403.0">
+         <tabs>
+            <Tab text="Auto Generate">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="autoGenButton" layoutX="268.0" layoutY="48.0" text="Enter Nodes" />
+                        <JFXTextField fx:id="nodesauto" layoutX="54.0" layoutY="55.0" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Manual">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXComboBox fx:id="nodeCombo" layoutX="46.0" layoutY="23.0" />
+                        <JFXButton fx:id="nodebutton" layoutX="132.0" layoutY="17.0" text="Generate Nodes" />
+                        <JFXComboBox fx:id="startcombo" layoutX="41.0" layoutY="87.0" />
+                        <JFXComboBox fx:id="endcombo" layoutX="159.0" layoutY="87.0" />
+                        <Text fill="#e10909" layoutX="110.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="----&gt;">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Text>
+                        <Text fill="#dd1b1b" layoutX="247.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="=">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Text>
+                        <JFXComboBox fx:id="capacityCombo" layoutX="290.0" layoutY="89.0" />
+                        <JFXButton fx:id="addVertex" layoutX="138.0" layoutY="148.0" prefHeight="39.0" prefWidth="164.0" text="Add" />
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Optimize">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="delnode" layoutX="14.0" layoutY="22.0" mnemonicParsing="false" text="delete Node" />
+                        <Button fx:id="deledge" layoutX="274.0" layoutY="22.0" mnemonicParsing="false" text="delete Edge" />
+                        <Button fx:id="addNode" layoutX="79.0" layoutY="83.0" mnemonicParsing="false" text="add Node" />
+                        <JFXComboBox fx:id="startopt" layoutX="47.0" layoutY="139.0" prefHeight="28.0" prefWidth="78.0" />
+                        <JFXComboBox fx:id="endopt" layoutX="187.0" layoutY="139.0" prefHeight="28.0" prefWidth="78.0" />
+                        <Button fx:id="goopt" layoutX="187.0" layoutY="207.0" mnemonicParsing="false" text="GO" />
+                        <Button fx:id="gonode" layoutX="62.0" layoutY="207.0" mnemonicParsing="false" text="GO" />
+                        <Button fx:id="addedgeop" layoutX="235.0" layoutY="83.0" mnemonicParsing="false" text="add Edge" />
+                        <JFXComboBox fx:id="capop" layoutX="304.0" layoutY="145.0" prefHeight="28.0" prefWidth="78.0" />
+                        <Button fx:id="capopgo" layoutX="328.0" layoutY="207.0" mnemonicParsing="false" text="GO" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs></JFXTabPane>
+      <Button fx:id="maxflow" layoutX="1019.0" layoutY="455.0" mnemonicParsing="false" text="Calculate MaxFlow" />
+   </children>
+</AnchorPane>
